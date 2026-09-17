@@ -1,36 +1,8 @@
 % Приклад файлу джерел. Додавайте свої записи в цьому ж стилі.
 % Цитування в тексті: \cite{ключ}
 
-@article{edge_inteligence,
-  author    = {Xubin Wang et al.},
-  title     = {Empowering Edge Intelligence: A Comprehensive Survey on On-Device AI Models},
-  journal = {ACM Comput. Surv},
-  volume    = {1},
-  number    = {1},
-  year      = {2025},
-  url       = {https://arxiv.org/abs/2503.06027},
-}
 
-@article{optimizing_edge_ai,
-  author    = {Xubin Wang, Weijia Jia},
-  title     = {Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies},
-  journal = {},
-  volume    = {},
-  number    = {},
-  year      = {2025},
-  url       = {https://arxiv.org/abs/2501.03265v1},
-}
-
-@article{tiny_deep_learning,
-  author    = {Shriyank Somvanshi et al.},
-  title     = {From Tiny Machine Learning to Tiny Deep Learning: A Survey},
-  journal = {J. ACM},
-  volume    = {37},
-  number    = {4},
-  year      = {2025},
-  url       = {https://arxiv.org/abs/2506.18927},
-}
-
+% огляд джерел
 @article{10.1162/tacl_a_00704,
     author = {Zhu, Xunyu and Li, Jian and Liu, Yong and Ma, Can and Wang, Weiping},
     title = {A Survey on Model Compression for Large Language
@@ -87,6 +59,69 @@ journal = {Journal of Computer and Communications},
 doi = {10.4236/jcc.2026.144012}
 }
 
+% methods
+
+@misc{nemo,
+  author       = {NVIDIA},
+  title        = {NeMo},
+  year         = {},
+  howpublished = {\url{https://docs.nvidia.com/nemo-framework/user-guide/latest/model-optimization/quantization/quantization.html}},
+  note         = {NeMa tools},
+}
+
+@misc{torch_pruning,
+  author       = {PyTorch},
+  title        = {Torch-Pruning},
+  year         = {},
+  howpublished = {\url{https://github.com/VainF/Torch-Pruning}},
+}
+
+@misc{quant_torch,
+  author       = {PyTorch},
+  title        = {Practical Quantization in PyTorch},
+  year         = {},
+  howpublished = {\url{https://pytorch.org/blog/quantization-in-practice/}},
+}
+
+@misc{dataset_wiki_instr,
+  author       = {lapa LLM},
+  title        = {Ukrainian Wiki Instruction Dialogs},
+  year         = {},
+  howpublished = {\url{https://huggingface.co/datasets/lapa-llm/wiki-instruction-dialogs}},
+}
+
+@misc{xlsum,
+  author       = {csebuetnlp},
+  title        = {XL-Sum: Large-Scale Multilingual Abstractive Summarization },
+  year         = {},
+  howpublished = {\url{https://huggingface.co/datasets/csebuetnlp/xlsum}},
+}
+
+@misc{dataset_mmlu,
+  author       = {INSAIT-Institute},
+  title        = {mmlu ukr},
+  year         = {},
+  howpublished = {\url{https://huggingface.co/datasets/INSAIT-Institute/mmlu_ukr}},
+}
+
+@misc{dataset_ifeval,
+  author       = {INSAIT-Institute},
+  title        = {IFeval},
+  year         = {},
+  howpublished = {\url{https://huggingface.co/datasets/INSAIT-Institute/ifeval_ukr}},
+}
+
+% plan and evaluation
+@article{tiny_deep_learning,
+  author    = {Shriyank Somvanshi et al.},
+  title     = {From Tiny Machine Learning to Tiny Deep Learning: A Survey},
+  journal = {J. ACM},
+  volume    = {37},
+  number    = {4},
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2506.18927},
+}
+
 @misc{lapa_llm,
   author       = {Lapa LLM},
   title        = {Lapa LLM v0.1.3},
@@ -101,3 +136,4 @@ doi = {10.4236/jcc.2026.144012}
   howpublished = {\url{https://docs.pytorch.org/ignite/generated/ignite.metrics.RougeL.html}},
   note         = {An evaluation metric},
 }
+
