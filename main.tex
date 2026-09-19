@@ -81,11 +81,10 @@ PTQ використовують частіше, оскільки він не п
 
 \section{Оцінювання результатів}
 \subsection{Baseline}
-lapa-llm/lapa-v0.1.3-instruct 12B, text-only, BF16 як еталон якості.\cite{lapa_llm} | тільки на instance.
-
-АБО
-
-INSAIT-Institute/MamayLM-Gemma-3-4B-IT-v1.0, text-only, BF16 \cite{mamay} | на компʼютері з 16 Gb VRAM. 
+\textbf{План А}:\\
+lapa-llm/lapa-v0.1.3-instruct 12B, text-only, BF16 як еталон якості.\cite{lapa_llm} | \textit{запуск на віддаленому instance АБО CPU offload (з вказанням цього моменту в звіті)}.\\
+\textbf{План Б}:\\
+INSAIT-Institute/MamayLM-Gemma-3-4B-IT-v1.0, text-only, BF16 \cite{mamay} | \textit{локальний компʼютер з 16 Gb VRAM}. 
 \subsection{Метрики і порівняння}
 Традиційні моделі ML оцінюють переважно за точністю або F1-мірою. Моделі категорії TinyML вартує оцінювати за сукупністю метрик\cite{tiny_deep_learning}.
 Ми плануємо оцінювати моделі з допомогою метрик якості й ефективності.
@@ -125,22 +124,16 @@ INSAIT-Institute/MamayLM-Gemma-3-4B-IT-v1.0, text-only, BF16 \cite{mamay} | на
 \end{enumerate}
 \subsection{Ризики}
 \begin{enumerate}
-    \item 12B BF16 > 16 GB VRAM: CPU offload для однієї з baseline (якщо не дістанемо сервер)
+    \item 12B BF16 > 16 GB VRAM: CPU offload, порівняння буде не зовсім доречним
     \item Два students і комбінації -- займає багато часу
     \item Дистанційний доступ до RUBIK Pi 3
 \end{enumerate}
 \section{Contribution statement}
-TBD
 \begin{contributions}
-  \contribution{Владислав Данилишин}{заглушка}
-  \contribution{Ія Магарита}{заглушка}
-  \contribution{Оксана Москвʼяк}{заглушка}
+  \contribution{Владислав Данилишин}{відповідає за динамічно визначені завдання}
+  \contribution{Ія Магарита}{відповідає за динамічно визначені завдання}
+  \contribution{Оксана Москвʼяк}{відповідає за динамічно визначені завдання}
 \end{contributions}
-спитати чи обовʼязково конкретний розподіл
-% варіанти: моделювання, евалюація, документація,дані, препроцесинг, EDA
-% Примітка: декларація використання AI-інструментів (AI usage) до цього
-% пропоузалу не входить — вона живе в README.md вашого репозиторію.
-
 \ucuprintbibliography
 
 \end{document}
